@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/item_EditPost"
+        android:title="編輯貼文" />
+    <item
+        android:id="@+id/item_DeletePost"
+        android:title="刪除貼文" />
+    <item
+        android:id="@+id/item_Mark"
+        android:title="追蹤貼文" />
+
+    <item
+        android:id="@+id/item_DeleteMark"
+        android:title="取消追蹤貼文" />
+
+    <item
+        android:id="@+id/item_Report"
+        android:title="檢舉貼文" />
+</menu>

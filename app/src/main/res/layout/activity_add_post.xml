@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_Outer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:context="com.tsai.congroup.AddPostActivity">
+
+    <include
+        layout="@layout/top_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <EditText
+            android:id="@+id/et_AddPostContent"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/edittextback"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="貼文內容"
+            android:padding="5dp"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/tv_LocationName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="ClearLocation"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:id="@+id/ll_PostImageListOuter"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/ll_PostImageList"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"></LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_AddImage"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="-7dp"
+            android:layout_weight="1"
+            android:onClick="AddImage"
+            android:padding="0dp"
+            android:text="附圖片" />
+
+        <Button
+            android:id="@+id/bt_AddPosition"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="-7dp"
+            android:layout_marginTop="-7dp"
+            android:layout_weight="1"
+            android:onClick="AddLocation"
+            android:padding="0dp"
+            android:text="打卡" />
+
+    </LinearLayout>
+
+</LinearLayout>

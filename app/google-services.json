@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "715573679949",
+    "project_id": "optimal-aegis-165015"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:715573679949:android:686fd932192dded5",
+        "android_client_info": {
+          "package_name": "com.tsai.congroup"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "715573679949-t0fggo59re7t9d3asjbr01a15rc46584.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tsai.congroup",
+            "certificate_hash": "ae46fb2f058e46ecdcd45118e1032591a4093f5c"
+          }
+        },
+        {
+          "client_id": "715573679949-vm8irr2kr5j3q5bkad2komccp9ipi886.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBltgNNM0FLP0m-kegGm8A1ZFxSLqyWnEI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

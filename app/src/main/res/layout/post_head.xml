@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:autofit="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_GroupHead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_GImg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/defaultgimg" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:id="@+id/tv_GName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="社團名稱"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_GType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingRight="10dp"
+                android:text="社團類別"
+                android:textSize="20sp" />
+
+            <ImageButton
+                android:id="@+id/ib_GroupBox"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:adjustViewBounds="true"
+                android:background="@color/colorTransparent"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/groupopen" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_GIntro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:text="群組簡介："
+            android:textSize="17sp" />
+
+        <Button
+            android:id="@+id/bt_JoinGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="加入群組"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorGrey"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_AddPost"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorWhite"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+
+            <ImageView
+                android:id="@+id/iv_MImg"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/defaultmimg" />
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/tv_AddPost"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:paddingLeft="5dp"
+                android:text="發布貼文吧~"
+                android:textSize="22sp"
+                autofit:minTextSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

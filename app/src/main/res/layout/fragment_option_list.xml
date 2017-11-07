@@ -1,0 +1,212 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tsai.congroup.OptionListFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <!--<view-->
+    <!--android:id="@+id/rv_OptionList"-->
+    <!--class="android.support.v7.widget.RecyclerView"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent" />-->
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_ProFile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="30dp"
+                        android:adjustViewBounds="true"
+                        android:background="@color/colorTransparent"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/profile" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center"
+                        android:text="個人頁面"
+                        android:textSize="30sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/colorOrange" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_GroupMemberList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="30dp"
+                        android:adjustViewBounds="true"
+                        android:background="@color/colorTransparent"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/groupmemberlist" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center"
+                        android:text="群組成員名單"
+                        android:textSize="30sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/colorOrange" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_AddGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="30dp"
+                        android:adjustViewBounds="true"
+                        android:background="@color/colorTransparent"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/addgroup" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center"
+                        android:text="新增群組"
+                        android:textSize="30sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/colorOrange" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_Introduction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="30dp"
+                        android:adjustViewBounds="true"
+                        android:background="@color/colorTransparent"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/intoduction" />
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center"
+                        android:text="介紹頁面"
+                        android:textSize="30sp" />
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/colorOrange" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_Logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="30dp"
+                        android:adjustViewBounds="true"
+                        android:background="@color/colorTransparent"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/logout" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center"
+                        android:text="登出"
+                        android:textSize="30sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/colorOrange" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

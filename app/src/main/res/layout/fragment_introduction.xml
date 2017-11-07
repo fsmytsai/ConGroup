@@ -1,0 +1,97 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tsai.congroup.IntroductionFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_Introduction"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <RadioGroup
+        android:id="@+id/rg_Introduction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_page1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:button="@drawable/radio_background"
+            android:checked="true"
+            android:clickable="false" />
+
+        <RadioButton
+            android:id="@+id/rb_page2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:button="@drawable/radio_background"
+            android:clickable="false" />
+
+        <RadioButton
+            android:id="@+id/rb_page3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:button="@drawable/radio_background"
+            android:clickable="false" />
+
+        <RadioButton
+            android:id="@+id/rb_page4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:button="@drawable/radio_background"
+            android:clickable="false" />
+
+        <RadioButton
+            android:id="@+id/rb_page5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:button="@drawable/radio_background"
+            android:clickable="false" />
+
+        <RadioButton
+            android:id="@+id/rb_page6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:button="@drawable/radio_background"
+            android:clickable="false" />
+
+        <RadioButton
+            android:id="@+id/rb_page7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:button="@drawable/radio_background"
+            android:clickable="false" />
+
+        <RadioButton
+            android:id="@+id/rb_page8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:button="@drawable/radio_background"
+            android:clickable="false" />
+
+        <RadioButton
+            android:id="@+id/rb_page9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:button="@drawable/radio_background"
+            android:clickable="false" />
+
+    </RadioGroup>
+
+</FrameLayout>

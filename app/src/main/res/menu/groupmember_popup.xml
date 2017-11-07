@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/item_Kick"
+        android:title="踢出群組" />
+    <item
+        android:id="@+id/item_UpGAdmin"
+        android:title="升為代理管理員" />
+    <item
+        android:id="@+id/item_DownGAdmin"
+        android:title="降為一般會員" />
+</menu>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/item_EditGroup"
+        android:title="編輯群組" />
+
+    <item
+        android:id="@+id/item_Quit"
+        android:title="退出群組" />
+
+    <item
+        android:id="@+id/item_DeleteGroup"
+        android:title="刪除群組" />
+
+    <item
+        android:id="@+id/item_Mark"
+        android:title="追蹤群組" />
+
+    <item
+        android:id="@+id/item_DeleteMark"
+        android:title="取消追蹤群組" />
+
+    <item
+        android:id="@+id/item_Report"
+        android:title="檢舉群組" />
+</menu>

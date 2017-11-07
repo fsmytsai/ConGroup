@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.tsai.congroup.ProFileActivity">
+
+    <include
+        layout="@layout/top_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/iv_MImg"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:adjustViewBounds="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_MemberName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:maxLines="1"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_IsOnLine"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/tv_MemberName" />
+
+        <TextView
+            android:id="@+id/tv_LastOnTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/tv_IsOnLine"
+            android:maxLines="1"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_Email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:maxLines="1"
+        android:text=""
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+
+    <TextView
+        android:id="@+id/tv_Birthday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:maxLines="1"
+        android:text=""
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:id="@+id/ll_Connection"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <!--<Button-->
+        <!--android:id="@+id/bt_Chat"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:onClick="Chat"-->
+        <!--android:text="聊天" />-->
+
+        <!--<Button-->
+        <!--android:id="@+id/bt_VideoCall"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:onClick="VideoCall"-->
+        <!--android:text="視訊" />-->
+
+        <ImageButton
+            android:id="@+id/ib_Chat"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:background="@color/colorTransparent"
+            android:onClick="Chat"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/prochat" />
+
+        <ImageButton
+            android:id="@+id/ib_VideoCall"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:adjustViewBounds="true"
+            android:background="@color/colorTransparent"
+            android:onClick="VideoCall"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/provideo" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_EditMImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:onClick="EditMImg"
+        android:text="修改大頭貼"
+        android:visibility="gone" />
+</LinearLayout>
